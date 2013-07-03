@@ -61,6 +61,6 @@ public class InscricaoBean extends PageBean {
     }
     
     public String alteraAction() {
-        return "menu";
+        return "inscricao";
     }
 }

@@ -9,13 +9,14 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 
 /**
  *
  * @author a1156462
  */
 @ManagedBean(name="listaCandidatos")
-@ApplicationScoped
+@SessionScoped
 public class ListaCandidatos implements Serializable {
 
     private ArrayList<Candidato> listaCandidatos;
