@@ -14,12 +14,24 @@ import javax.faces.bean.ManagedBean;
  *
  * @author a1156462
  */
-@ManagedBean
+@ManagedBean(name="listaCandidatos")
 @ApplicationScoped
 public class ListaCandidatos implements Serializable {
 
     private ArrayList<Candidato> listaCandidatos;
     
+    public ListaCandidatos() {
+        listaCandidatos = new ArrayList<Candidato>();
+    }
     
-
+    public void addCandidato(Candidato candidato){
+        listaCandidatos.add(candidato);
+    }
+    
+    public ArrayList<Candidato> getListaCandidato(){
+        return listaCandidatos;
+    }
+    
 }
+
+

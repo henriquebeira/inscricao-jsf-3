@@ -103,7 +103,7 @@
                 </executions>
             </plugin>
         </plugins>
-        <finalName>inscricao-jsf-1</finalName>
+        <finalName>inscricao-jsf-2</finalName>
     </build>
     <repositories>
         <!--

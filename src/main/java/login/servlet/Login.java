@@ -40,10 +40,10 @@ public class Login extends HttpServlet {
             
             if  (request.getMethod().equalsIgnoreCase("post")) {
                 if  (usuario.equals("admin") && senha.equals("123")) {
-                    String url = response.encodeRedirectURL("/inscricao-jsf-1/menu.xhtml");
+                    String url = response.encodeRedirectURL("/inscricao-jsf-2/menu.xhtml");
                     response.sendRedirect(url);
                 }else{
-                    String url = response.encodeRedirectURL("/inscricao-jsf-1/login.xhtml");
+                    String url = response.encodeRedirectURL("/inscricao-jsf-2/login.xhtml");
                     response.sendRedirect(url);
                 }
             }else{

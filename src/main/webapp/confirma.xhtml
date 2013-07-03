@@ -48,7 +48,9 @@
                                   label="data" maxlength="100"/>
                 </h:panelGroup>
             </h:panelGroup>
-            <h:commandButton value="Voltar" action="inscricao"/>
+            <h:commandButton value="Alterar" action="#{inscricaoBean.alteraAction}"/>
+            <h:commandButton value="Nova inscrição" action="#{inscricaoBean.inscricaoAction}"/>
+            <h:commandButton value="Volta ao menu" action="#{inscricaoBean.menuAction}"/>
             <h:messages/>
         </h:form>
     </ui:define>

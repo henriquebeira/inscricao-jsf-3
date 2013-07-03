@@ -2,6 +2,7 @@ package inscricao.faces.mngbeans;
 
 import inscricao.entity.Candidato;
 import inscricao.entity.Idioma;
+import inscricao.managed_beans.ListaCandidatos;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -24,6 +25,7 @@ public class InscricaoBean extends PageBean {
     };
     private Candidato candidato = new Candidato(idiomas[0]); // inicialmente ingles
     private List<SelectItem> idiomaItemList;
+    private ListaCandidatos listaCandidatos;
 
     public Candidato getCandidato() {
         return candidato;
@@ -43,8 +45,22 @@ public class InscricaoBean extends PageBean {
     }
 
     public String confirmaAction() {
+        listaCandidatos = new ListaCandidatos();
         candidato.setDataHora(new Date());
         candidato.setIdioma(idiomas[candidato.getIdioma().getCodigo()-1]);
+        listaCandidatos.addCandidato(candidato);
         return "confirma";
+    }
+    
+    public String inscricaoAction() {
+        return "inscricao";
+    }
+    
+    public String menuAction() {
+        return "menu";
+    }
+    
+    public String alteraAction() {
+        return "menu";
     }
 }
