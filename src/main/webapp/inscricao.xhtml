@@ -77,7 +77,9 @@
                           styleClass="ui-inputfield" label="Programa" maxlength="100" required="true"/>
                 </h:panelGroup>
             </h:panelGroup>
-            <h:commandButton value="Confirmar Inscrição" action="#{inscricaoBean.confirmaAction}"/>
+            <h:commandButton value="#{inscricaoBean.novoAlterarUsuario()}" action="#{inscricaoBean.confirmaAction}"/>
+            <h:commandButton value="Nova Inscrição" action="#{inscricaoBean.limparCamposAction}"/>
+            <h:commandButton value="Menu Inicial" action="menu"/>
             <h:messages/>
         </h:form>
     </ui:define>

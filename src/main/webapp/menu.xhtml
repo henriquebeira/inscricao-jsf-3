@@ -18,9 +18,14 @@
     <ui:define name="content">
         <h:form>
             <div class="titulo-form">Menu</div>
-            <a href="/inscricao-jsf-2/inscricao.xhtml">Inscrição</a>
-            <br/><br/>
-            <a href="/inscricao-jsf-2/consulta.xhtml">Consulta</a>
+            <h:panelGroup style="text-align: left; margin-bottom: 10px;" layout="block">
+                <h:panelGroup styleClass="form-block" layout="block">
+                    <h:commandButton value="Nova Inscrição" action="#{menuInicialBean.novaInscricaoAction}"/>
+                </h:panelGroup>
+                <h:panelGroup styleClass="form-block" layout="block">
+                    <h:commandButton value="Consultar Inscrição" action="#{menuInicialBean.consultarAction}"/>
+                </h:panelGroup>
+            </h:panelGroup>
             <h:messages/>
         </h:form>
     </ui:define>
