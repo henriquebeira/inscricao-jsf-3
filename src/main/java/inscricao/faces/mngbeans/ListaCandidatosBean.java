@@ -5,6 +5,7 @@
 package inscricao.faces.mngbeans;
 
 import inscricao.entity.Candidato;
+import inscricao.faces.mngbeans.InscricaoBean;
 import java.io.Serializable;
 import java.util.ArrayList;
 import javax.faces.bean.ApplicationScoped;
@@ -31,10 +32,16 @@ public class ListaCandidatosBean implements Serializable {
     public ListDataModel<Candidato> getCandidatoDataModel() {
         return candidatoDataModel;
     }
-    
+               
     public void adicionarCandidato(Candidato candidato) {
         if (listaCandidatos != null) {
             listaCandidatos.add(candidato);
+        }
+    }
+    
+    public void removerCandidato(Candidato candidato) {
+        if (listaCandidatos != null) {
+            listaCandidatos.remove(candidato);
         }
     }
 
@@ -59,7 +66,7 @@ public class ListaCandidatosBean implements Serializable {
         return listaCandidatos;
     }
     
-        public void alterarCandidato(Candidato candidato) {
+    public void alterarCandidato(Candidato candidato) {
         if (listaCandidatos != null) {
             for (Candidato cand : listaCandidatos) {
                 if (cand.getCpf() == candidato.getCpf()) {

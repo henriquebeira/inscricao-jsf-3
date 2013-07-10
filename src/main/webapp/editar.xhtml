@@ -35,7 +35,7 @@
                     <f:facet name="header">
                         <h:outputText value="Idioma"/>
                     </f:facet>
-                    <h:outputText value="#{candidato.idioma}"/>
+                    <h:outputText value="#{candidato.idioma.descricao}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">
@@ -53,13 +53,13 @@
                     <f:facet name="header">
                         <h:outputText value="Editar"/>
                     </f:facet>
-                    <h:commandButton value="Editar" action="#{listaCandidatosBean.editarUsuarioAction}"/>
+                    <h:commandButton value="Editar" action="#{editarBean.editarAction}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">
                         <h:outputText value="Excluir"/>
                     </f:facet>
-                    <h:commandButton value="Excluir" action="#{listaCandidatosBean.excluirUsuarioAction}"/>
+                    <h:commandButton value="Excluir" action="#{editarBean.excluirAction}"/>
                 </h:column>
             </h:dataTable>
             <h:commandButton value="Menu Inicial" action="#{menuInicialBean.menuAction}"/>
