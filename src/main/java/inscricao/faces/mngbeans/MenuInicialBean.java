@@ -23,4 +23,12 @@ public class MenuInicialBean extends PageBean {
     public String consultarAction() {
         return "consulta";
     }
+    
+    public String editarAction() {
+        return "editar";
+    }
+    
+    public String menuAction() {
+        return "menu";
+    }
 }

@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>utfpr.ct.dainf.if6ae.exemplos</groupId>
-    <artifactId>inscricao-jsf-2</artifactId>
+    <artifactId>inscricao-jsf-3</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>Ficha de Inscrição JSF v2</name>
+    <name>Ficha de Inscrição JSF v3</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>

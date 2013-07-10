@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.model.ListDataModel;
 
 /**
  *
@@ -20,9 +21,15 @@ import javax.faces.bean.SessionScoped;
 public class ListaCandidatosBean implements Serializable {
 
     private ArrayList<Candidato> listaCandidatos;
+    private ListDataModel<Candidato> candidatoDataModel;
     
     public ListaCandidatosBean() {
         listaCandidatos = new ArrayList<Candidato>();
+        candidatoDataModel = new ListDataModel<>(listaCandidatos);
+    }
+    
+    public ListDataModel<Candidato> getCandidatoDataModel() {
+        return candidatoDataModel;
     }
     
     public void adicionarCandidato(Candidato candidato) {

@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.model.ListDataModel;
 import javax.faces.model.SelectItem;
 import utfpr.faces.support.PageBean;
 
@@ -25,7 +26,7 @@ public class InscricaoBean extends PageBean {
     private Candidato candidato = new Candidato(idiomas[0]); // inicialmente ingles
     private List<SelectItem> idiomaItemList;
     private boolean novoUsuario = true;
-
+    
     public Candidato getCandidato() {
         return candidato;
     }
@@ -98,4 +99,6 @@ public class InscricaoBean extends PageBean {
             return "true";
         }
     }
+    
+
 }
