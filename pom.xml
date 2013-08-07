@@ -40,7 +40,6 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -131,5 +130,11 @@
             <name>Repositório da UTFPR COGETI-CT</name>
         </repository>
         -->
+        <repository>
+            <url>http://repository.primefaces.org/</url>
+            <id>PrimeFaces-maven-lib</id>
+            <layout>default</layout>
+            <name>Repository for library PrimeFaces-maven-lib</name>
+        </repository>
     </repositories>
 </project>
